@@ -30,7 +30,7 @@ def pop():
 number = int(input("Limit Of Stack:: "))
 
 while True:
-  print("Select the Operation: 1.push 2.pop 3.quit")
+  print("Select the Operation: 1.push 2.pop 3.Top 4.quit")
   choice= int(input())
 
   if choice==1:
@@ -39,7 +39,11 @@ while True:
   elif choice==2:
     pop()
 
+  #To see the top element
   elif choice==3:
+    print("Top Element in Sack: ",stack[-1])
+
+  elif choice==4:
     break
   
   else:
